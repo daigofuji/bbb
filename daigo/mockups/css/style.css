@@ -2,7 +2,7 @@
 	style.css 
 	Written by Daigo Fujiwara (@DaigoFuji)
 	Date: PUBLISHEDDATE
-	use this: http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
+	use this style: http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
 	also: http://csslint.net/ (Will hurt your feelings)
 */
 
@@ -45,12 +45,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway','Helvetica Neue', Helvetica, Arial, sans-serif; 
 }
 
+/* utility */
+
+hr.spacer {
+	border:none;
+}
+
+
 /* Header */
 
 .masthead {
 	height: 84px;
 	background: #dae4ee url('../img/bbb-background.png') left top repeat-x;
-	margin-bottom: 3em;
+	margin-bottom: 1em;
 }
 .site-header-container {
 	height: 84px;
@@ -67,6 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
 	height: 42px;
 	border: none;
+	padding-left:1.1em;
+	padding-right:1.1em;
 }
 .nav-bottom {
 	height: 37px;
@@ -89,23 +98,33 @@ h1, h2, h3, h4, h5, h6 {
 /* home page */
 
 .home-callout {
-	margin-bottom:3em;
+	margin-bottom:2em;
+	text-align: center;
 } 
 
 .home-callout h1 {
- font-size: 4em
+	margin-bottom:0;
 }
 
 .home-callout h3 {
 	font-weight: normal;
-	font-size: 2em;
 }
 
 .home-panels { overflow:hidden;}
 
+.home-panels .large.button {
+	font-size:inherit;
+	padding:.75em 1em .3em;
+	text-align: left;
+}
+.home-panels .card a {
+	min-height: 11.625em;
+}
 
-
-
+.home-panels h4 {
+	font-weight: normal;
+	margin-bottom:.3em;
+}
 
 
 
@@ -122,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* utility */
 .quiet {
-	color:#aaa;
+	color:#777;
 }
 
 /* footer */
@@ -132,8 +151,13 @@ footer {
 	margin-top: 100px;
 	padding: 30px 0;
 }
-.copyright {
+.site-footer .columns  {
 	font-size: .75em; /* 12px */
+}
+.site-footer .columns a {
+	color: #444;
+}
+.copyright {
 }
 
 /* 
@@ -143,10 +167,38 @@ footer {
 
 @media only screen and (min-width: 48em){
 	/* when the topbar expands */
+	.masthead {
+		margin-bottom: 1.75em;
+	}
+	.home-callout h1 {
+		font-size: 3.5em
+	}
+	.home-callout h3 {
+		font-size: 1.75em;
+	}
 
 }
 
 @media only screen and (min-width: 58.75em) {
 	/* wider screen */
+	.masthead {
+		margin-bottom: 2.5em;
+	}
+	.home-callout h1 {
+	 font-size: 4.5em
+	}
+	.home-callout h3 {
+		font-size: 2em;
+	}
+}
+
+/* I know I am breaking the "mobile first" rule, but ...*/ 
+@media only screen and (max-width: 31.25em) {
+	.card {
+		width:100%;
+	}
+	.home-panels .card a {
+		min-height: 0;
+	}
 
 }

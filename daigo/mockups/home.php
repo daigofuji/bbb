@@ -5,27 +5,21 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8">
-  <title>BrooksBaseball.net: Home of the PITCHf/x Tool</title>
-  <meta name="description" content="PUT DESCRIPTION HERE" />
-  <meta name="keywords" content="PUT KEYWORDS HERE SEPERATED BY COMMAS" />
+  <link rel="shortcut icon" href="favicon.ico">
 
   <!-- Mobile Specific Metas. Consider: maximum-scale=1
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS  Get: http://www.google.com/fonts/
+  <!-- modernizr
   ================================================== -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/responsive-tables.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/offcanvas.css">
-  <link rel="stylesheet" href="css/style.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 
-  <!-- Ah, the favicon.
+  <!-- SEO Page Information
   ================================================== -->
-  <link rel="shortcut icon" href="favicon.ico">
+  <title>BrooksBaseball.net: Home of the PITCHf/x Tool</title>
+  <meta name="description" content="PUT DESCRIPTION HERE" />
+  <meta name="keywords" content="PUT KEYWORDS HERE SEPERATED BY COMMAS" />
 
   <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
   Twitter: https://dev.twitter.com/docs/cards/types/summary-card
@@ -41,13 +35,19 @@
   <meta name="twitter:description" content="DESCRIPTION">
   <meta name="twitter:image" content="http://IMAGEURL">
   
-  <!-- modernizr
+  <!-- CSS  Get: http://www.google.com/fonts/
   ================================================== -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/responsive-tables.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/offcanvas.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-  <body id="page" class="off-canvas hide-extras">
+<body id="page" class="off-canvas hide-extras">
 	<div class="container">
 
 		<header id="header" class="masthead">
@@ -67,8 +67,8 @@
         <div class="row nav-top">
           <div class="large-9 columns">
     			<ul id="mainNav" class="button-group left">
-    				<li><a href="index.html" class="button transparent main-nav">Dashboard</a></li>
-    				<li><a href="index.html" class="button transparent main-nav">Player Cards</a></li>
+    				<li><a href="dashboard.php" class="button transparent main-nav">Dashboard</a></li>
+    				<li><a href="pc_splash.php" class="button transparent main-nav">Player Cards</a></li>
     				<li><a href="index.html" class="button transparent main-nav">PITCHf/x Tool</a></li>
     			</ul>
           </div>
@@ -91,7 +91,7 @@
         <div class="row nav-bottom">
           <div class="large-12 column">
           <ul class="inline-list right">
-            <li class="quiet"><a href="" class="dark">About Us</a></li>
+            <li class="quiet"><a href="about.php" class="dark">About Us</a></li>
             <li class="quiet"><a target="_blank" href="http://www.baseballprospectus.com/" class="dark">Presented by Baseball Prospectus <i class="icon-share-alt"></i></a></li>
             <li class="quiet"><a target="_blank" href="#" class="dark">Powered by Pitch Info <i class="icon-share-alt"></i></a></li>
             <li id="login-button">
@@ -112,52 +112,53 @@
 
             <h1 class="hero">Pitch Tracking. Simplified.</h1> 
 
-            <h3>For Sabermetricians, Scouts, Scientists, and <strong>Fans</string>.</h3>
+            <h3>For Sabermetricians, Scouts, Scientists, and <strong>Fans</strong>.</h3>
       		</div>
         </div>
         
         <div class="row home-panels">
-          <div class="large-3 small-6 columns">
-            <div class="panel">
-              <h3>Dashboard</h3>
-              <p>View today's current pitchers and probables with direct links to game logs, player cards, and strikezone maps.</p>
-            </div>
+          <div class="large-3 small-6 columns card">
+            <a class="large secondary button">
+              <h4>Dashboard</h4>
+              <p>View today's probable pitchers with links to game logs, player cards, and strikezone maps.</p>
+            </a>
           </div>
-          <div class="large-3 small-6 columns">
-            <div class="panel">
-              <h3>Player Cards </h3>
+          <div class="large-3 small-6 columns card">
+            <a class="large secondary button">
+              <h4>Player Cards </h4>
               <p>Career-spanning cards with manually reclassified pitch-type data for every player in baseball. </p>
-            </div>
+            </a>
           </div>
-          <div class="large-3 small-6 columns">
-            <div class="panel">
-              <h3>PITCHf/x Tool </h3>
+          <div class="large-3 small-6 columns card">
+            <a class="large secondary button">
+              <h4>PITCHf/x Tool </h4>
               <p>The original way to get detailed information about pitching performances.</p> 
-            </div>
+            </a>
           </div>
-          <div class="large-3 small-6 columns">
-            <div class="panel">
-              <h3>About </h3>
+          <div class="large-3 small-6 columns card">
+            <a class="large secondary button">
+              <h4>About </h4>
               <p>Learn about the people and technology behind BrooksBaseball.net. </p>
-            </div>
+            </a>
           </div>
         </div>
   		</section>
 
 
 
-
-
+      <!-- ################## -->
+      <!-- ### MOBILE NAV ### -->
+      <!-- ################## -->
   		<section id="sidebar" role="complementary">
 				<nav id="sideMenu" role="navigation">
           <ul id="sideMainNav" class="side-nav">
             <li class="active"><a href="#">Home</a></li>
             <li class="divider"></li>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="dashboard.php">Dashboard</a></li>
             <li class="divider"></li>
-            <li><a href="#">Player Cards</a></li>
+            <li><a href="pc_splash.php">Player Cards</a></li>
             <li class="divider"></li>
-            <li><a href="#">PITCHf/x Tool</a></li>
+            <li><a href="pfxVB/pfx.php">PITCHf/x Tool</a></li>
             <li class="divider"></li>
             <li>
               <form>
@@ -172,10 +173,10 @@
               </form>
             </li>
             <li class="divider"></li>
-            <li><a href="#" class="small button">Log in</a></li>
+            <li><a href="login.php" class="small button">Log in</a></li>
             <li class="divider"></li>
-            <li><a href="">About Us</a></li>
-            <li><a target="_blank" href="http://www.baseballprospectus.com/">Presented by Baseball Prospectus <i class="icon-share-alt"></i></a></li>
+            <li><a href="about.php">About Us</a></li>
+            <li><a target="_blank" href="http://www.baseballprospectus.com/">Presented by Prospectus <i class="icon-share-alt"></i></a></li>
             <li><a target="_blank" href="#">Powered by Pitch Info <i class="icon-share-alt"></i></a></li>
     			</ul>
     		</nav>
@@ -184,10 +185,23 @@
 
 		</div>
 
-    <hr/>
-    <footer class="site-footer row" role="contentinfo">
-      <div class="large-12 columns">
-        <p class="quiet copyright">@2013 Brooks Baseball </p>
+    <hr class="spacer"/>
+    <footer role="contentinfo">
+      <div class="site-footer row">
+        <div class="large-4 columns">
+          <p class="quiet copyright">@2013 Brooks Baseball </p>
+        </div>
+        <div class="large-8 columns">
+          <ul class="inline-list right quiet dark">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="pc_splash.php">Player Cards</a></li>
+            <li><a href="pfxVB/pfx.php">PITCHf/x</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="#">Baseball Prospectus</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
