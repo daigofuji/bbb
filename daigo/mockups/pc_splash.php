@@ -9,6 +9,7 @@
   /* Start rendering the page */
   include 'lib/page-top.php'; 
   /* Page start, getting all the SEO Stuff to the <head> part of html belowhere */ 
+  /* Begin SEO stuff */
 ?>
 
 
@@ -46,42 +47,35 @@
 
 
   		<section role="main">
+
+
+
+
   			<div class="row">
-  			  <div class="large-12 columns home-callout">
-
-            <h1 class="hero">Pitch Tracking. Simplified.</h1> 
-
-            <h3>For Sabermetricians, Scouts, Scientists, and <strong>Fans</strong>.</h3>
-      		</div>
+  			  <div class="large-12 columns player-nav">
+     
+     
+         </div>
         </div>
-        
-        <div class="row home-panels">
-          <div class="large-3 small-6 columns card">
-            <a class="large secondary button">
-              <h4>Dashboard</h4>
-              <p>View today's probable pitchers with links to game logs, player cards, and strikezone maps.</p>
-            </a>
-          </div>
-          <div class="large-3 small-6 columns card">
-            <a class="large secondary button">
-              <h4>Player Cards </h4>
-              <p>Career-spanning cards with manually reclassified pitch-type data for every player in baseball. </p>
-            </a>
-          </div>
-          <div class="large-3 small-6 columns card">
-            <a class="large secondary button">
-              <h4>PITCHf/x Tool </h4>
-              <p>The original way to get detailed information about pitching performances.</p> 
-            </a>
-          </div>
-          <div class="large-3 small-6 columns card">
-            <a class="large secondary button">
-              <h4>About </h4>
-              <p>Learn about the people and technology behind BrooksBaseball.net. </p>
-            </a>
+
+        <!-- page contents goes here -->
+        <div class="row">
+          <div class="large-12 columns ">
+
+     
+
+
+
+
+
+
+
+
           </div>
         </div>
-  		</section>
+        <!-- end page contents -->
+
+      </section><!-- end main section -->
 
 
 

@@ -79,7 +79,6 @@ hr.spacer {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-
 }
 .nav-bottom {
 	height: 37px;
@@ -206,3 +205,35 @@ footer {
 	}
 
 }
+
+
+/* Brooksbaseball preexisting */
+
+    	.credit{
+
+    		height: 150px;
+
+    	}
+        .typeahead {
+            z-index: 2500;
+            width: 275px;
+            padding: 1px 1px 1px 1px;
+        }
+        .typeahead + .dropdown-menu .active > a,
+        .typeahead + .dropdown-menu .active > a:hover {
+            color: #ffffff;
+            background-color: #DFDFDF;
+            background-image: -moz-linear-gradient(top, #DFDFDF, #C2C2C2);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#DFDFDF), to(#C2C2C2));
+            background-image: -webkit-linear-gradient(top, #DFDFDF, #C2C2C2);
+            background-image: -o-linear-gradient(top, #DFDFDF, #C2C2C2);
+            background-image: linear-gradient(to bottom, #DFDFDF, #C2C2C2);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DFDFDF', endColorstr='#C2C2C2', GradientType=0);
+        }
+
+	    .dashcell {
+	    	width: 270px;
+	    	background-color: rgb(238, 238, 238);
+	    	vertical-align:top;
+	    }
+	     #ui-datepicker-div { display: none; }
